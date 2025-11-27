@@ -30,7 +30,7 @@
   }
 
   @for $index from 1 through $month-length {
-    :nth-child(#{$index})::before {
+    &__day:nth-child(#{$index})::before {
       content: '#{$index}';
     }
   }
@@ -45,7 +45,7 @@
 
   @each $day, $margin in $week-days {
     &--start-day-#{$day} {
-      :first-child {
+      .calendar__day:first-child {
         margin-left: $margin;
       }
     }

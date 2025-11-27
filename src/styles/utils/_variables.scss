@@ -6,9 +6,9 @@ $color: #000;
 $hover-color: #ffbfcb;
 $duration: 0.5s;
 $width: $day-size * 7 + $gap * 6 + $padding * 2;
-$height: $day-size * 6 + $gap * 5 + $padding * 2;
 $week-days: (
-  'tue' ($day-size + 1px),
+  'mon' 0,
+  'tue' ($day-size + $gap),
   'wed' 2 * ($day-size + $gap),
   'thu' 3 * ($day-size + $gap),
   'fri' 4 * ($day-size + $gap),
